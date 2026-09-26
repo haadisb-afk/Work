@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A considered travel guide for curious people and slow weekends.">
+	<title>Roamwell | Travel with intention</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./Style.CSS">
+</head>
+
+<body>
+	<header class="site-header">
+		<a class="brand" href="#top" aria-label="Roamwell home"><span class="brand-symbol">R</span><span>roamwell</span></a>
+		<button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+		<nav class="main-nav" aria-label="Main navigation">
+			<a href="#places">Places</a>
+			<a href="#journal">Journal</a>
+			<a href="#about">Our approach</a>
+			<a class="saved-link" href="#saved">Saved <span class="saved-count">0</span></a>
+		</nav>
+	</header>
+
+	<main id="top">
+		<section class="hero">
+			<div class="hero-copy">
+				<p class="kicker">Independent travel notes <span></span> Est. 2026</p>
+				<h1>Go somewhere<br><em>that stays with you.</em></h1>
+				<p class="hero-text">Thoughtful guides for the places between the bucket list and home. Find a slower way to see more.</p>
+				<a class="button button-dark" href="#places">Find your next place <span>↓</span></a>
+			</div>
+			<div class="hero-image" role="img" aria-label="A quiet coastal village in Italy">
+				<span class="image-note">A morning in<br>Portofino</span>
+				<span class="image-location">44° 18' N<br>9° 12' E</span>
+				<div class="hero-stamp">RW<br><small>no. 01</small></div>
+			</div>
+		</section>
+
+		<section class="quick-bar" aria-label="Travel categories">
+			<span>What are you looking for?</span>
+			<a href="#places">A weekend away <b>↗</b></a>
+			<a href="#places">Good food <b>↗</b></a>
+			<a href="#places">A little quiet <b>↗</b></a>
+		</section>
+
+		<section class="places section-wrap" id="places">
+			<div class="section-intro">
+				<div><p class="eyebrow">01 / Destinations</p><h2>Go with your<br><em>curiosity.</em></h2></div>
+				<p class="section-description">Places with a point of view. Pick a mood, choose a corner of the map, and let the rest unfold.</p>
+			</div>
+			<div class="filter-row" role="group" aria-label="Filter destinations">
+				<button class="filter active" type="button" data-filter="all">All places</button>
+				<button class="filter" type="button" data-filter="coast">By the water</button>
+				<button class="filter" type="button" data-filter="city">City energy</button>
+				<button class="filter" type="button" data-filter="quiet">Find quiet</button>
+			</div>
+			<div class="destination-grid">
+				<article class="destination-card feature-card" data-category="coast quiet">
+					<div class="destination-image image-amalfi"><span class="destination-tag">Slow coast</span><button class="save-button" type="button" aria-label="Save Amalfi Coast" data-place="Amalfi Coast">♡</button></div>
+					<div class="card-copy"><div><h3>Amalfi Coast</h3><p>Italy · 4 days</p></div><span class="card-arrow">↗</span></div>
+				</article>
+				<article class="destination-card" data-category="city">
+					<div class="destination-image image-copenhagen"><span class="destination-tag">Good design</span><button class="save-button" type="button" aria-label="Save Copenhagen" data-place="Copenhagen">♡</button></div>
+					<div class="card-copy"><div><h3>Copenhagen</h3><p>Denmark · 3 days</p></div><span class="card-arrow">↗</span></div>
+				</article>
+				<article class="destination-card" data-category="quiet coast">
+					<div class="destination-image image-naoshima"><span class="destination-tag">Art island</span><button class="save-button" type="button" aria-label="Save Naoshima" data-place="Naoshima">♡</button></div>
+					<div class="card-copy"><div><h3>Naoshima</h3><p>Japan · 5 days</p></div><span class="card-arrow">↗</span></div>
+				</article>
+			</div>
+		</section>
+
+		<section class="manifesto section-wrap" id="about">
+			<div class="manifesto-number">02 / <span>Our approach</span></div>
+			<div><h2>Travel is not a checklist.<br>It is a <em>feeling.</em></h2><p>Roamwell is a small, independent guide to traveling with more attention. We look for the neighborhood bakery, the train that takes the long way, and the hotel you will still talk about next year.</p><a class="text-link" href="#journal">Read our field notes <span>↗</span></a></div>
+		</section>
+
+		<section class="journal section-wrap" id="journal">
+			<div class="section-heading"><div><p class="eyebrow">03 / Field notes</p><h2>From the journal</h2></div><a class="text-link" href="#journal">See all notes <span>↗</span></a></div>
+			<div class="journal-grid">
+				<article class="journal-card"><div class="journal-image journal-lisbon"></div><p class="journal-meta">City guide · 06 min read</p><h3>Lisbon, before the streets wake up</h3><a href="#contact">Read note ↗</a></article>
+				<article class="journal-card"><div class="journal-image journal-table"></div><p class="journal-meta">Field note · 04 min read</p><h3>The case for a very long lunch</h3><a href="#contact">Read note ↗</a></article>
+				<article class="journal-card"><div class="journal-image journal-train"></div><p class="journal-meta">Travel well · 05 min read</p><h3>Take the scenic route home</h3><a href="#contact">Read note ↗</a></article>
+			</div>
+		</section>
+
+		<section class="newsletter section-wrap" id="contact">
+			<div><p class="eyebrow">A note in your inbox</p><h2>Leave room<br>for <em>somewhere new.</em></h2></div>
+			<form class="newsletter-form"><p>Once a month: one place, three good ideas, no noise.</p><div class="input-row"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe to newsletter">↗</button></div><small class="form-status" role="status" aria-live="polite"></small></form>
+		</section>
+	</main>
+
+	<footer class="site-footer"><a class="brand" href="#top"><span class="brand-symbol">R</span><span>roamwell</span></a><span>Made for the curious · 2026</span><a href="mailto:hello@roamwell.co">hello@roamwell.co</a></footer>
+	<div class="toast" role="status" aria-live="polite"></div>
+	<script src="./Script.JS"></script>
+</body>
+
+</html>
